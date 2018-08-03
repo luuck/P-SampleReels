@@ -1,0 +1,34 @@
+{
+  "name": "p-samplereels",
+  "version": "1.0.0",
+  "description": "Sample Reels ~~~",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luuck/P-SampleReels.git"
+  },
+  "author": "luuck",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luuck/P-SampleReels/issues"
+  },
+  "homepage": "https://github.com/luuck/P-SampleReels#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.6",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-cache": "^1.0.2",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.1",
+    "gulp-useref": "^3.1.5",
+    "run-sequence": "^2.2.1"
+  }
+}
