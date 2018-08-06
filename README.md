@@ -2,6 +2,10 @@
 
 Personal Sample Reels 
 
+### 访问
+
+[Demo](https://luuck.github.io/P-SampleReels/dist/index.html)
+
 ### 安装
 
 ``` bash
