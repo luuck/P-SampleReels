@@ -1,37 +1,13 @@
-var gulp = require('gulp');
-var htmlmin = require('gulp-htmlmin');
-var scss = require('gulp-sass')
-var cssnano = require('gulp-cssnao');
-var imagemin = require('gulp-imagemin');
-
-gulp.task('image', function() {
-    gulp.src('img/*.{jpg,png,gif}')
-        .pipe(caches(imagemin({
-            progressive: true,
-            svgoPlugins: [{ removeViewBox: false }],
-            interlaced: true
-        })))
-        .pipe(gulp.dest('dist/img'))
-});
-
-// 使用sass预编译的css
-gulp.task('scss', function() {
-    gulp.src('*.scss')
-        .pipe(scss())
-        .pipe(gulp.dest('dist'))
-        .pipe(cssnano())
-        .pipe(gulp.dest('dist/css'))
-});
-
-gulp.task('html', function() {
-    gulp.src('*.html').pipe(htmlmin({
-        collapseWhitespace: true,
-        removeComments: true
-    })).pipe(gulp.dest('dist'));
-});
-
-gulp.src().pipe().pipe(gulp.dest(''));
-
-gulp.task('default', function() {
-    console.log('gulp启动成功');
-});;
+(function() {
+    var data = {
+        list: [{
+            title: '公共接口快速生成文档',
+            gitHubUrl: 'https://github.com/luuck/P-FastCreateInterfaceDoc',
+            linkUrl: 'https://luuck.github.io/P-FastCreateInterfaceDoc/dist/view/index.html#/',
+            imgUrl: 'https://luuck.github.io/P-FastCreateInterfaceDoc/doc/pic/intro.png',
+            desc: '这是一款通内置公共接口，快速生成Markdown语法的工具。'
+        }]
+    };
+    var html = template('tpl-list', data);
+    document.getElementById('article-list').innerHTML = html;
+})();

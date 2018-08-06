@@ -69,6 +69,10 @@ gulp.task('browserSync', function() {
 
 gulp.task('useref', function() {
     return gulp.src('src/*.html')
+        .pipe(htmlmin({
+            collapseWhitespace: true,
+            removeComments: true
+        }))
         .pipe(gulpIf('*.css', minifyCSS()))
         .pipe(gulpIf('*.js', uglify()))
         .pipe(useref())
@@ -84,7 +88,7 @@ gulp.task('clean', function() {
 //     return cache.clearAll(callback);
 // })
 
-// 不像图片被删除
+// 不想图片被删除
 gulp.task('clean:dist', function(callback) {
     del(['dist/**/*', '!dist/img', '!dist/img/**/*'], callback)
 });
