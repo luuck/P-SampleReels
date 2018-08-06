@@ -1,6 +1,6 @@
 $(function() {
     function handle() {
-        $('.J-header').animate({ 'opacity': 1, 'filter': 'alpha(opacity=100)' }).show();
+        $('.J-header,.nav').animate({ 'opacity': 1, 'filter': 'alpha(opacity=100)' }).show();
         var data = dataConfig; // dataconfig.js
         var html = template('tpl-list', data);
         $('#article-list').html(html);
