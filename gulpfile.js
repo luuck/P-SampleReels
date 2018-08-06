@@ -69,10 +69,6 @@ gulp.task('browserSync', function() {
 
 gulp.task('useref', function() {
     return gulp.src('src/*.html')
-        .pipe(htmlmin({
-            collapseWhitespace: true,
-            removeComments: true
-        }))
         .pipe(gulpIf('*.css', minifyCSS()))
         .pipe(gulpIf('*.js', uglify()))
         .pipe(useref())

@@ -1,4 +1,57 @@
-<html><meta charset="utf-8"><meta name="renderer" content="webkit"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui"><meta name="keywords " content="luuck,个人作品集"><meta name="description" content="luuck,个人作品集"><link rel="shortcut icon" href="./img/favicon.jpg"><title>luuck' sample reels</title><link rel="stylesheet " href="./css/style.css"><link rel="stylesheet" href="./css/a.css"><body><header class="header"><a href="http://luuck.github.io" target="_blank " class="button">Blog</a><div class="content"><img src="./img/avatar.gif" alt=" " class="avatar"><div class="text"><h1 class="title">luuck</h1><p class="desc">前端开发者<br>热爱生活，热爱工作，热爱大自然~~</p></div><div class="wrapper"><div class="social-box"><div class="front">FOLLOW ME</div><div class="back"><ul class="social"><li><a href="https://github.com/luuck" target="_blank " title="github "><img src="https://www.w3ctrain.com/img/github.svg"></a></li><li><a href="https://weibo.com/ql2015" target="_blank " title="blog "><img src="https://www.w3ctrain.com/img/weibo.svg"></a></li></ul></div></div></div></div></header><nav class="nav"><ul><li><a href="https://github.com/luuck" target="_blank ">Github</a></li><li><a href="https://weibo.com/ql912015" target="_blank ">Weibo</a></li><li><a href="http://luuck.github.io" target="_blank ">Blog</a></li></ul></nav><article class="archive" id="article-list"></article><script id="tpl-list" type="text/html">{{each list}}
+<html>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui" />
+<meta name="keywords " content="luuck,个人作品集" />
+<meta name="description" content="luuck,个人作品集" />
+<link rel="shortcut icon" href="./img/favicon.jpg">
+<title>luuck' sample reels</title>
+<link rel="stylesheet" href="./css/mian-v1.0.0.css">
+
+<body>
+    <header class="header">
+        <a href="http://luuck.github.io" target="_blank " class="button ">Blog</a>
+        <div class="content"><img src="./img/avatar.gif " alt=" " class="avatar " />
+            <div class="text">
+                <h1 class="title">luuck</h1>
+                <p class="desc">前端开发者<br />热爱生活，热爱工作，热爱大自然~~
+                </p>
+            </div>
+            <div class="wrapper ">
+                <div class="social-box ">
+                    <div class="front ">
+                        FOLLOW ME
+                    </div>
+                    <div class="back ">
+                        <ul class="social ">
+                            <li>
+                                <a href="https://github.com/luuck " target="_blank " title="github ">
+                                    <img src="https://www.w3ctrain.com/img/github.svg ">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://weibo.com/ql2015 " target="_blank " title="blog ">
+                                    <img src="https://www.w3ctrain.com/img/weibo.svg ">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="nav ">
+        <ul>
+            <li><a href="https://github.com/luuck " target="_blank ">Github</a></li>
+            <li><a href="https://weibo.com/ql912015" target="_blank ">Weibo</a></li>
+            <li><a href="http://luuck.github.io " target="_blank ">Blog</a></li>
+        </ul>
+    </nav>
+    <article class="archive" id="article-list">
+    </article>
+    <script id="tpl-list" type="text/html">
+        {{each list}}
         <div class="section-wrapper ">
             <section class="section ">
                 <a href="{{$value.linkUrl}}" target="_blank ">
@@ -12,10 +65,29 @@
                 </div>
             </section>
         </div>
-        {{/each}}</script><footer class="footer"><div id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</div></footer><script src="./js/lib/template-web.js"></script><script src="./js/index.js"></script><script src="./js/lazyload.js"></script><script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script><script>var _hmt = _hmt || [];
+        {{/each}}
+    </script>
+    <footer class="footer">
+        <div id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</div>
+    </footer>
+
+
+    <script src="js/template-web.js"></script>
+
+    <script src="js/main-v1.0.0.js"></script>
+
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <script>
+        var _hmt = _hmt || [];
         (function() {
             var hm = document.createElement("script");
             hm.src = "https://hm.baidu.com/hm.js?67c369f29a4d416dba8683ed1e579b60";
             var s = document.getElementsByTagName("script")[0];
             s.parentNode.insertBefore(hm, s);
-        })();</script></body></html>
+        })();
+    </script>
+
+</body>
+
+</html>
