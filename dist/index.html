@@ -53,7 +53,7 @@
     </nav>
     <article class="archive" id="article-list">
     </article>
-    <footer class="footer">
+    <footer class="footer J-footer">
         <div id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</div>
     </footer>
     <script id="tpl-list" type="text/html">
@@ -61,7 +61,11 @@
         <div class="section-wrapper ">
             <section class="section ">
                 <a href="{{$value.linkUrl}}" target="_blank ">
-                    <div class="img-wrapper "><img src="img/loading.gif " data-src="{{$value.imgUrl}} " class="lazy " /></div>
+
+                    <div class="img-wrapper ">
+                        <img src="img/loading.gif " data-src="{{$value.imgUrl}} " class="lazy " />
+                        <!-- <img src="{{$value.imgUrl}}" class="lazy " alt=""> -->
+                    </div>
                 </a>
                 <div class="section__text ">
                     <a href="{{$value.gitHubUrl}} " target="_blank ">
@@ -75,6 +79,7 @@
     </script>
     <script src="js/template-web.js"></script>
     <script src="js/jquery.js"></script>
+    <script src="js/dataconfig.js"></script>
     <script src="js/main-v1.0.0.js"></script>
     <script src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
     <script>
