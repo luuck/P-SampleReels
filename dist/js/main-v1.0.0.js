@@ -1,16 +1,54 @@
-(function() {
-    var data = {
-        list: [{
-            title: '公共接口快速生成文档',
-            gitHubUrl: 'https://github.com/luuck/P-FastCreateInterfaceDoc',
-            linkUrl: 'https://luuck.github.io/P-FastCreateInterfaceDoc/dist/view/index.html#/',
-            imgUrl: 'https://luuck.github.io/P-FastCreateInterfaceDoc/doc/pic/intro.png',
-            desc: '这是一款通内置公共接口，快速生成Markdown语法的工具。'
-        }]
-    };
-    var html = template('tpl-list', data);
-    document.getElementById('article-list').innerHTML = html;
-})();
+function preloadimages(arr) {
+    var newimages = [],
+        loadedimages = 0
+    var postaction = function() {} //此处增加了一个postaction函数
+    var arr = (typeof arr != "object") ? [arr] : arr
+
+    function imageloadpost() {
+        loadedimages++
+        if (loadedimages == arr.length) {
+            postaction(newimages) //加载完成用我们调用postaction函数并将newimages数组做为参数传递进去
+        }
+    }
+    for (var i = 0; i < arr.length; i++) {
+        newimages[i] = new Image()
+        newimages[i].src = arr[i]
+        newimages[i].onload = function() {
+            imageloadpost()
+        }
+        newimages[i].onerror = function() {
+            imageloadpost()
+        }
+    }
+    return { //此处返回一个空白对象的done方法
+        done: function(f) {
+            postaction = f || postaction
+        }
+    }
+}
+$(function() {
+
+    function handle() {
+        $('.J-header').animate({ 'opacity': 1, 'filter': 'alpha(opacity=100)' }).show();
+
+        var data = {
+            list: [{
+                title: '公共接口快速生成文档',
+                gitHubUrl: 'https://github.com/luuck/P-FastCreateInterfaceDoc',
+                linkUrl: 'https://luuck.github.io/P-FastCreateInterfaceDoc/dist/view/index.html#/',
+                imgUrl: 'https://luuck.github.io/P-FastCreateInterfaceDoc/doc/pic/intro.png',
+                desc: '这是一款通内置公共接口，快速生成Markdown语法的工具。'
+            }]
+        };
+        var html = template('tpl-list', data);
+        document.getElementById('article-list').innerHTML = html;
+    }
+
+    preloadimages(['https://luuck.github.io/P-SampleReels/dist/img/top-bg.jpeg']).done(function() {
+        handle();
+    });
+
+});
 /* lazyload.js (c) Lorenzo Giuliani
  * MIT License (http://www.opensource.org/licenses/mit-license.html)
  *

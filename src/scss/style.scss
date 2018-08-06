@@ -24,7 +24,19 @@ a:hover {
     cursor: pointer
 }
 
+.top {
+    position: absolute;
+    height: 20em;
+    width: 100%;
+    text-align: center;
+    img {
+        padding-top: 8em;
+        // transform: translateY(-50%);
+    }
+}
+
 .header {
+    opacity: 0;
     font-size: 20px;
     display: flex;
     justify-content: center;

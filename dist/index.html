@@ -10,8 +10,11 @@
 <link rel="stylesheet" href="./css/mian-v1.0.0.css">
 
 <body>
-    <header class="header">
-        <a href="http://luuck.github.io" target="_blank " class="button ">Blog</a>
+    <div class="top">
+        <img src="./img/loading-1.gif">
+    </div>
+    <header class="header J-header">
+        <a href="https://luuck.github.io" target="_blank " class="button ">Blog</a>
         <div class="content"><img src="./img/avatar.gif " alt=" " class="avatar " />
             <div class="text">
                 <h1 class="title">luuck</h1>
@@ -31,7 +34,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="https://weibo.com/ql2015 " target="_blank " title="blog ">
+                                <a href="https://weibo.com/ql912015" target="_blank " title="blog ">
                                     <img src="https://www.w3ctrain.com/img/weibo.svg ">
                                 </a>
                             </li>
@@ -45,11 +48,14 @@
         <ul>
             <li><a href="https://github.com/luuck " target="_blank ">Github</a></li>
             <li><a href="https://weibo.com/ql912015" target="_blank ">Weibo</a></li>
-            <li><a href="http://luuck.github.io " target="_blank ">Blog</a></li>
+            <li><a href="https://luuck.github.io " target="_blank ">Blog</a></li>
         </ul>
     </nav>
     <article class="archive" id="article-list">
     </article>
+    <footer class="footer">
+        <div id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</div>
+    </footer>
     <script id="tpl-list" type="text/html">
         {{each list}}
         <div class="section-wrapper ">
@@ -67,17 +73,10 @@
         </div>
         {{/each}}
     </script>
-    <footer class="footer">
-        <div id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</div>
-    </footer>
-
-
     <script src="js/template-web.js"></script>
-
+    <script src="js/jquery.js"></script>
     <script src="js/main-v1.0.0.js"></script>
-
-    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
+    <script src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
     <script>
         var _hmt = _hmt || [];
         (function() {
@@ -87,7 +86,6 @@
             s.parentNode.insertBefore(hm, s);
         })();
     </script>
-
 </body>
 
 </html>
