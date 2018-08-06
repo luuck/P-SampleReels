@@ -1,0 +1,1 @@
+$(function(){preloadimages(["./img/top-bg-1.jpeg"]).done(function(){!function(){$(".J-header,.nav").animate({opacity:1,filter:"alpha(opacity=100)"}).show();var a=dataConfig,t=template("tpl-list",a);$("#article-list").html(t)}(),lazyload(function(){$(".J-footer").animate({opacity:1,filter:"alpha(opacity=100)"}).show()})})});
