@@ -8,7 +8,7 @@ var dataConfig = {
         desc: '这是一款通内置公共接口，快速生成Markdown语法的工具'
     }, {
         title: '击破气球小游戏',
-        gitHubUrl: '',
+        gitHubUrl: 'https://luuck.github.io/Tool/breakballoon/index.html',
         linkUrl: 'https://luuck.github.io/Tool/breakballoon/index.html',
         imgUrl: './img/item/2.png',
         // imgUrl: 'https://luuck.github.io/Tool/breakballoon/img/bg-tip.png',
