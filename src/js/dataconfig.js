@@ -5,7 +5,7 @@ var dataConfig = {
         linkUrl: 'https://luuck.github.io/P-FastCreateInterfaceDoc/dist/view/index.html#/',
         imgUrl: './img/item/1.png',
         // imgUrl: 'https://luuck.github.io/P-FastCreateInterfaceDoc/doc/pic/intro.png',
-        desc: '这是一款通内置公共接口，快速生成Markdown语法的工具'
+        desc: '内置公共接口，快速生成文档'
     }, {
         title: '击破气球小游戏',
         gitHubUrl: 'https://luuck.github.io/Tool/breakballoon/index.html',
